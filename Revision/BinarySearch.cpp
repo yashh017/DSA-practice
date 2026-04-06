@@ -72,7 +72,7 @@ int LastOccurance(vector<int> &nums,int target) {
 
         if(nums[mid] < target) {
             left = mid+1;
-        }
+        }                                                       //  TO check the first occurance of the element
         else if(nums[mid] > target) {
             right = mid-1;
         }
@@ -90,7 +90,7 @@ int main() {
     int target;
     for(int val : nums) {
         cout<<val<<" ";
-    }
+    }                                                                       //TO check the last occurance of the element
     cout<<endl;
     cout<<"Enter the number to check last occurance: ";
     cin>>target;
