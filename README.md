@@ -4,6 +4,7 @@ This repository contains my Data Structures and Algorithms (DSA) practice proble
 
 ## Topics Covered
 - Arrays
+- 2-D arrays
 - Binary Search
 - Sorting
 - Strings
@@ -18,9 +19,8 @@ This repository contains my Data Structures and Algorithms (DSA) practice proble
 - Math_or_basic
 
 ## Approach
-- Solving problems from LeetCode and other platforms
-- Writing clean and optimized code
-- Adding time and space complexity in each solution
+- Solving problems from LeetCode.
+- Writing clean and optimized code.
 
 
 ## Language Used
