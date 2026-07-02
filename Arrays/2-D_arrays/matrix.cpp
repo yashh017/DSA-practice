@@ -41,10 +41,7 @@ int diagonalSum(int mat[][3],int n) {
     return sum;
 }
 int main() {
-    int mat[][3] = {
-    {3,2,4},
-    {7,3,1},
-    {9,6,2}};
+    int mat[][3] = {{3,2,4},{7,3,1},{9,6,2}};
     int n = 3;
     cout<<diagonalSum(mat,n);
     return 0;

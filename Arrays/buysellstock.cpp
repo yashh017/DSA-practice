@@ -2,7 +2,7 @@
 #include<vector>
 using namespace std;
 
-int maxprofit(vector<int> prices) {
+int maxprofit(vector<int> &prices) {
 
     int bestbuy = prices[0], maxprofit = 0;
 

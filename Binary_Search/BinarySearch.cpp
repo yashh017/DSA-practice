@@ -60,36 +60,45 @@ using namespace std;
 // }
 
 
-// int LastOccurance(vector<int>arr, int t, int n) {
-//     int l = 0, r = n-1, ans = -1;
+int LastOccurance(vector<int>arr, int t, int n) {
+    int l = 0, r = n-1, ans = -1;
 
-//     while(l <= r) {
-//         int mid = l + (r-l)/2;
+    while(l <= r) {
+        int mid = l + (r-l)/2;
 
-//         if(arr[mid] < t) {
-//             l = mid + 1;
-//         }
+        if(arr[mid] < t) {
+            l = mid + 1;
+        }
 
-//         else if (arr[mid] > t) {
-//             r = mid-1;
+        else if (arr[mid] > t) {
+            r = mid-1;
 
-//         }
-//         else {
-//             ans = mid;
-//             l = mid + 1;
-//         }
-//     }
-//     return ans;
-// }
+        }
+        else {
+            ans = mid;
+            l = mid + 1;
+        }
+    }
+    return ans;
+}
 
-// int main() {
-//     vector<int> arr = {2,3,3,3,3};
-//     int n = 5;
-//     int t = 3;
+int main() {
+    vector<int> arr = {2,3,3,3,2};for (let i = 0; i < 5; i++) {
+  console.log('Hello world!');
+}
+for (let i = 0; i < 5; i++) {
+  console.log('Hello world!');
+}
+for (let i = 0; i < 5; i++) {
+  console.log('Hello world!');
+}
 
-//     cout<<LastOccurance(arr,t,n);
-//     return 0;
-// }
+    int n = 5;
+    int t = 3;
+
+    cout<<LastOccurance(arr,t,n);
+    return 0;
+}
 
 
 // int LastOccur(vector<int> nums,int target,int n) {
@@ -298,29 +307,29 @@ using namespace std;
 //     return 0;
 // }
 
-#include <algorithm>
-using namespace std;
+// #include <algorithm>
+// using namespace std;
 
-void reverseArray(vector<int>& arr, int k) {
-    int n = arr.size();
-    k = k%n;
+// void reverseArray(vector<int>& arr, int k) {
+//     int n = arr.size();
+//     k = k%n;
 
-    reverse(arr.begin(), arr.end());
+//     reverse(arr.begin(), arr.end());
 
-    reverse(arr.begin(), arr.begin() + k);
+//     reverse(arr.begin(), arr.begin() + k);
 
-    reverse(arr.begin() + k, arr.end());
-}
+//     reverse(arr.begin() + k, arr.end());
+// }
 
-int main() {
-    vector<int> arr = {1,2,3,4,5,6,7};
-    int k = 3;
+// int main() {
+//     vector<int> arr = {1,2,3,4,5,6,7};
+//     int k = 3;
 
-    reverseArray(arr, k);  // ✅ just call it
+//     reverseArray(arr, k);  // ✅ just call it
 
-    for(int val : arr) {
-        cout << val << " ";
-    }
+//     for(int val : arr) {
+//         cout << val << " ";
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
